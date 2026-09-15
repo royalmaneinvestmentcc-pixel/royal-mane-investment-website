@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Insights - Royal Mane Investment CC. Articles, research, and analysis on entrepreneurship, innovation, and economic development in Namibia.">
+    <meta name="keywords" content="insights, articles, research, analysis, entrepreneurship, innovation, Namibia">
+    <meta property="og:title" content="Insights - Royal Mane Investment CC">
+    <meta property="og:description" content="Read our latest articles and research on business development, innovation, and economic opportunities in Namibia.">
+    <title>Insights - Royal Mane Investment CC</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%23FF8C00'>R</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Royal Mane</span>
+            </a>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="what-we-do.html" class="nav-link">What We Do</a></li>
+                <li><a href="initiatives.html" class="nav-link">Initiatives</a></li>
+                <li><a href="partnerships.html" class="nav-link">Partnerships</a></li>
+                <li><a href="insights.html" class="nav-link active">Insights</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Insights</h1>
+            <p>Research, articles, and analysis on entrepreneurship, innovation, and economic development.</p>
+        </div>
+    </section>
+
+    <!-- Search & Filter -->
+    <section class="insights-filter">
+        <div class="container">
+            <div class="filter-controls">
+                <input type="text" id="insightSearch" class="search-input" placeholder="Search articles...">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterInsights('all')">All</button>
+                    <button class="filter-btn" onclick="filterInsights('business')">Business</button>
+                    <button class="filter-btn" onclick="filterInsights('innovation')">Innovation</button>
+                    <button class="filter-btn" onclick="filterInsights('market-research')">Market Research</button>
+                    <button class="filter-btn" onclick="filterInsights('entrepreneurship')">Entrepreneurship</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Grid -->
+    <section class="articles-section">
+        <div class="container">
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <article class="article-card" data-category="entrepreneurship" data-title="Building the Entrepreneurship Ecosystem in Northern Namibia">
+                    <div class="article-header">
+                        <span class="article-category">Entrepreneurship</span>
+                        <span class="article-date">September 2025</span>
+                    </div>
+                    <h3>Building the Entrepreneurship Ecosystem in Northern Namibia</h3>
+                    <p>Exploring how collaborative networks and strategic support systems can foster entrepreneurship and economic development in the Oshana Region and Northern Namibia.</p>
+                    <a href="#" class="article-link">Read More →</a>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card" data-category="market-research" data-title="Housing Market Trends: Opportunities in Northern Namibia">
+                    <div class="article-header">
+                        <span class="article-category">Market Research</span>
+                        <span class="article-date">August 2025</span>
+                    </div>
+                    <h3>Housing Market Trends: Opportunities in Northern Namibia</h3>
+                    <p>Analysis of housing demand, supply gaps, and investment opportunities in Northern Namibia based on recent market research and data analysis.</p>
+                    <a href="#" class="article-link">Read More →</a>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card" data-category="innovation" data-title="Technology Solutions for Namibian Challenges">
+                    <div class="article-header">
+                        <span class="article-category">Innovation</span>
+                        <span class="article-date">August 2025</span>
+                    </div>
+                    <h3>Technology Solutions for Namibian Challenges</h3>
+                    <p>How innovation and technology can address practical challenges in Namibia—from agriculture to energy to employment.</p>
+                    <a href="#" class="article-link">Read More →</a>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="article-card" data-category="business" data-title="Making Your Business Investment-Ready">
+                    <div class="article-header">
+                        <span class="article-category">Business</span>
+                        <span class="article-date">July 2025</span>
+                    </div>
+                    <h3>Making Your Business Investment-Ready</h3>
+                    <p>A practical guide for entrepreneurs on how to structure your business, prepare financial statements, and attract investors.</p>
+                    <a href="#" class="article-link">Read More →</a>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="article-card" data-category="entrepreneurship" data-title="Youth Innovation and Job Creation in Namibia">
+                    <div class="article-header">
+                        <span class="article-category">Entrepreneurship</span>
+                        <span class="article-date">July 2025</span>
+                    </div>
+                    <h3>Youth Innovation and Job Creation in Namibia</h3>
+                    <p>Empowering young Namibians to turn ideas into sustainable businesses that create employment and economic value.</p>
+                    <a href="#" class="article-link">Read More →</a>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="article-card" data-category="market-research" data-title="Understanding the Namibian Tech Startup Landscape">
+                    <div class="article-header">
+                        <span class="article-category">Market Research</span>
+                        <span class="article-date">June 2025</span>
+                    </div>
+                    <h3>Understanding the Namibian Tech Startup Landscape</h3>
+                    <p>Overview of Namibia's emerging technology sector, key players, challenges, and opportunities for tech entrepreneurs.</p>
+                    <a href="#" class="article-link">Read More →</a>
+                </article>
+
+                <!-- Article 7 -->
+                <article class="article-card" data-category="innovation" data-title="AI and Automation: Opportunities for Namibian Businesses">
+                    <div class="article-header">
+                        <span class="article-category">Innovation</span>
+                        <span class="article-date">June 2025</span>
+                    </div>
+                    <h3>AI and Automation: Opportunities for Namibian Businesses</h3>
+                    <p>Practical applications of artificial intelligence and automation that Namibian businesses can leverage for efficiency and innovation.</p>
+                    <a href="#" class="article-link">Read More →</a>
+                </article>
+
+                <!-- Article 8 -->
+                <article class="article-card" data-category="business" data-title="Strategic Partnerships: Keys to Business Growth">
+                    <div class="article-header">
+                        <span class="article-category">Business</span>
+                        <span class="article-date">May 2025</span>
+                    </div>
+                    <h3>Strategic Partnerships: Keys to Business Growth</h3>
+                    <p>How strategic partnerships with corporates, government, and other organizations can accelerate business growth and market access.</p>
+                    <a href="#" class="article-link">Read More →</a>
+                </article>
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <p>No articles found matching your search. Try different keywords or filters.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest insights, research, and opportunities from Royal Mane Investment CC.</p>
+            <form class="newsletter-form" onsubmit="handleContactForm(event)">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Royal Mane Investment CC</h3>
+                    <p>Building opportunities. Connecting ideas. Creating impact.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="what-we-do.html">What We Do</a></li>
+                            <li><a href="initiatives.html">Initiatives</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>More</h4>
+                        <ul>
+                            <li><a href="partnerships.html">Partnerships</a></li>
+                            <li><a href="insights.html">Insights</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="initiatives.html#solvenam">SolveNam</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Royal Mane Investment CC. All rights reserved. | CC/2025/05525</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .page-hero {
+            margin-top: 80px;
+            padding: var(--spacing-2xl) var(--spacing-md);
+            background: linear-gradient(135deg, var(--color-dark-gray) 0%, var(--color-black) 100%);
+            color: var(--color-white);
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            color: var(--color-white);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .page-hero p {
+            font-size: 1.2rem;
+            color: #d0d0d0;
+        }
+
+        .insights-filter {
+            padding: var(--spacing-lg) var(--spacing-md);
+            background-color: var(--color-light-gray);
+            border-bottom: 1px solid #ddd;
+        }
+
+        .filter-controls {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+        }
+
+        .search-input {
+            padding: var(--spacing-sm) var(--spacing-md);
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: var(--font-primary);
+            transition: var(--transition);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--color-orange);
+            box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.1);
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: var(--spacing-sm);
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: var(--spacing-sm) var(--spacing-md);
+            background-color: var(--color-white);
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background-color: var(--color-orange);
+            color: var(--color-white);
+            border-color: var(--color-orange);
+        }
+
+        .articles-section {
+            padding: var(--spacing-2xl) var(--spacing-md);
+            background-color: var(--color-white);
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: var(--spacing-xl);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .article-card {
+            background-color: var(--color-light-gray);
+            padding: var(--spacing-lg);
+            border: 1px solid #e0e0e0;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            border-color: var(--color-orange);
+        }
+
+        .article-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--spacing-md);
+            font-size: 0.85rem;
+        }
+
+        .article-category {
+            display: inline-block;
+            background-color: var(--color-orange);
+            color: var(--color-white);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+
+        .article-date {
+            color: var(--color-text-light);
+            font-size: 0.8rem;
+        }
+
+        .article-card h3 {
+            color: var(--color-black);
+            margin-bottom: var(--spacing-md);
+            flex-grow: 1;
+        }
+
+        .article-card p {
+            color: var(--color-text-light);
+            font-size: 0.95rem;
+            margin-bottom: var(--spacing-md);
+            flex-grow: 1;
+        }
+
+        .article-link {
+            color: var(--color-orange);
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .article-link:hover {
+            color: #e67e00;
+        }
+
+        .no-results {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: var(--spacing-2xl);
+            color: var(--color-text-light);
+            font-size: 1.1rem;
+        }
+
+        .newsletter-section {
+            padding: var(--spacing-2xl) var(--spacing-md);
+            background: linear-gradient(135deg, var(--color-dark-gray) 0%, var(--color-black) 100%);
+            color: var(--color-white);
+            text-align: center;
+        }
+
+        .newsletter-section h2 {
+            color: var(--color-white);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .newsletter-section p {
+            color: #d0d0d0;
+            font-size: 1.05rem;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .newsletter-form {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+            gap: var(--spacing-sm);
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: var(--font-primary);
+        }
+
+        .newsletter-form button {
+            padding: var(--spacing-sm) var(--spacing-lg);
+            background-color: var(--color-orange);
+            color: var(--color-white);
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .newsletter-form button:hover {
+            background-color: #e67e00;
+        }
+
+        @media (max-width: 768px) {
+            .filter-controls {
+                gap: var(--spacing-sm);
+            }
+
+            .filter-buttons {
+                gap: var(--spacing-xs);
+            }
+
+            .filter-btn {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <script src="script.js"></script>
+</body>
+</html>
