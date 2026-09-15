@@ -1,0 +1,110 @@
+/* Logo and Branding Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--color-black);
+    transition: var(--transition);
+}
+
+.logo-image {
+    height: 50px;
+    width: auto;
+    transition: var(--transition);
+}
+
+.logo:hover .logo-image {
+    transform: scale(1.05);
+}
+
+.logo-text {
+    color: var(--color-black);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.logo:hover .logo-text {
+    color: var(--color-orange);
+}
+
+/* Hero Logo Section */
+.hero-logo-section {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.hero-logo-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto var(--spacing-lg);
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Logo */
+.footer-logo {
+    height: 60px;
+    width: auto;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Brand Section */
+.brand-section {
+    padding: var(--spacing-2xl) var(--spacing-md);
+    background-color: var(--color-light-gray);
+    text-align: center;
+}
+
+.brand-section h2 {
+    color: var(--color-black);
+    margin-bottom: var(--spacing-lg);
+}
+
+.brand-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.brand-logo-container img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+.brand-tagline {
+    font-size: 1.3rem;
+    color: var(--color-orange);
+    font-weight: 600;
+    margin-bottom: var(--spacing-lg);
+}
+
+.brand-description {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--color-text-light);
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .logo-image {
+        height: 40px;
+    }
+
+    .hero-logo-image {
+        max-width: 300px;
+    }
+
+    .footer-logo {
+        height: 50px;
+    }
+
+    .brand-logo-container img {
+        max-width: 250px;
+    }
+}
